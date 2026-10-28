@@ -215,6 +215,13 @@ dl.cv{margin:0;display:grid;gap:18px}
 .wp-en{display:block;font-family:var(--serif);font-weight:600}
 .wp-zh{display:block;color:var(--muted);font-size:.86rem;margin-top:2px}
 @media (max-width:600px){.wptable th:nth-child(3),.wptable td:nth-child(3){display:none}.wptable td:first-child{width:auto}}
+@media (max-width:600px){
+  .statbar{padding:16px 0}
+  .stats-row{grid-template-columns:repeat(3,1fr);gap:8px}
+  .stats-row a{padding:10px 10px;border-radius:6px}
+  .stats-row b{font-size:1.45rem}
+  .stats-row span{font-size:.7rem;line-height:1.3}
+}
 
 /* code page v3 */
 .pkgindex{width:100%;border-collapse:collapse;margin:26px 0 10px;font-size:.95rem;background:var(--paper);border:1px solid var(--line)}
