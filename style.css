@@ -166,3 +166,57 @@ dl.cv{margin:0;display:grid;gap:18px}
   .about,.feature{padding-top:48px;padding-bottom:48px}
   .band{padding:48px 0}
 }
+
+.feature.teach{grid-template-columns:minmax(260px,420px) 1fr;padding-top:0}
+.feature.teach .feature-img img{aspect-ratio:auto}
+@media (max-width:900px){.feature.teach{grid-template-columns:1fr}.feature.teach .feature-img{max-width:420px}}
+
+.talk.tall{grid-row:1 / span 2}
+.talk.tall img{aspect-ratio:auto;height:100%}
+@media (max-width:900px){.talk.tall{grid-row:auto}.talk.tall img{aspect-ratio:4/3}}
+
+/* hero v2: photo in its own column instead of a stretched background */
+.hero{min-height:auto;display:block;background:#1d1a17;align-items:initial}
+.hero-in{display:grid;grid-template-columns:1fr 400px;gap:56px;align-items:center;padding-top:72px;padding-bottom:72px}
+.hero-photo{margin:0;border-radius:6px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(0,0,0,.8)}
+.hero-photo img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center 40%}
+.hero h1{max-width:none}
+@media (max-width:900px){.hero-in{grid-template-columns:1fr;gap:32px;padding-top:48px;padding-bottom:48px}.hero-photo{max-width:360px}.hero-photo img{aspect-ratio:4/3}}
+
+/* code page */
+.code-top{display:grid;grid-template-columns:1fr 300px;gap:40px;align-items:start;margin-bottom:28px}
+.stats{display:grid;gap:10px}
+.stats div{display:flex;align-items:center;gap:14px;background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:12px 16px}
+.stats b{font:600 2rem/1 var(--serif);color:var(--accent);min-width:3.2ch}
+.stats span{font-size:.85rem;color:var(--muted);line-height:1.3}
+.toc{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 10px}
+.toc a{font-size:.88rem;padding:5px 12px;border-radius:999px;background:var(--band);text-decoration:none;color:var(--ink)}
+.toc a:hover{background:var(--ink);color:#fff}
+.arch{display:grid;grid-template-columns:300px 1fr;gap:32px;padding:36px 0;border-bottom:1px solid var(--line);scroll-margin-top:80px}
+.arch-vis{position:sticky;top:84px;align-self:start}
+.arch-vis img{background:#fff;border:1px solid var(--line);border-radius:6px;padding:10px;width:100%}
+.glyph{aspect-ratio:4/3;border-radius:6px;background:linear-gradient(135deg,#2f4a5a,#1f2f39);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px}
+.glyph span{font:600 2.6rem var(--serif);color:#f1c9a8}
+.glyph b{font:600 1.1rem var(--serif)}
+.arch-kind{font:600 .75rem var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--accent-2);margin:0 0 6px}
+.arch h3{font-size:1.3rem}
+.arch-paper{font-size:.93rem;color:var(--muted);margin:0 0 12px}
+.arch h4{font:600 .95rem var(--sans);margin:18px 0 6px}
+.arch h4 span{color:var(--muted);font-weight:400}
+.arch ul{margin:0;padding-left:1.1em}
+.arch li{margin:0 0 4px}
+.arch-meta{margin:14px 0 0;display:grid;gap:8px}
+.arch-meta div{display:grid;grid-template-columns:130px 1fr;gap:12px}
+.arch-meta dt{font-weight:600;font-size:.9rem}
+.arch-meta dt span{display:block;color:var(--muted);font-weight:400;font-size:.85rem}
+.arch-meta dd{margin:0;font-size:.95rem}
+.arch-foot{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:18px;padding-top:14px;border-top:1px dashed var(--line)}
+.facts{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.85rem;color:var(--muted)}
+.facts .doi{font-family:ui-monospace,Menlo,monospace;font-size:.8rem}
+.btns{display:flex;gap:8px}
+.btn-s{font-size:.88rem;font-weight:600;padding:6px 14px;border-radius:999px;background:var(--ink);color:#fff;text-decoration:none}
+.btn-s.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.btn-s:hover{filter:brightness(1.2)}
+.more{margin-top:28px;color:var(--muted)}
+@media (max-width:900px){.code-top{grid-template-columns:1fr}.stats{grid-template-columns:repeat(3,1fr)}.stats div{flex-direction:column;align-items:flex-start;gap:4px}.arch{grid-template-columns:1fr}.arch-vis{position:static;max-width:360px}}
+@media (max-width:600px){.arch-meta div{grid-template-columns:1fr;gap:2px}.stats b{font-size:1.5rem}}
