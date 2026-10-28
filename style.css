@@ -186,6 +186,8 @@ dl.cv{margin:0;display:grid;gap:18px}
 .page-hero h1 span{font-weight:500;color:#d8cbb9;font-size:.6em;margin-left:.3em}
 @media (max-width:900px){.hero-in,.page-hero .hero-in{grid-template-columns:1fr;gap:28px;padding-top:40px!important;padding-bottom:40px!important}.hero-photo{max-width:420px}}
 .dlbox img{max-height:300px;object-fit:contain}
+.figcard .fig{position:relative;overflow:hidden}
+.figcard .fig img{position:absolute;inset:12px;width:calc(100% - 24px);height:calc(100% - 24px);max-height:none;object-fit:contain}
 
 /* code page v3 */
 .pkgindex{width:100%;border-collapse:collapse;margin:26px 0 10px;font-size:.95rem;background:var(--paper);border:1px solid var(--line)}
