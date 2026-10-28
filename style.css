@@ -188,6 +188,33 @@ dl.cv{margin:0;display:grid;gap:18px}
 .dlbox img{max-height:300px;object-fit:contain}
 .figcard .fig{position:relative;overflow:hidden}
 .figcard .fig img{position:absolute;inset:12px;width:calc(100% - 24px);height:calc(100% - 24px);max-height:none;object-fit:contain}
+/* stats bar */
+.statbar{background:#26221e;color:#efe6d8;padding:22px 0;border-top:1px solid #3a342e}
+.stats-row{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.stats-row a{display:block;background:#1d1a17;border:1px solid #3a342e;border-radius:8px;padding:14px 16px;text-decoration:none;color:#efe6d8}
+.stats-row a:hover{border-color:#c98a5e}
+.stats-row b{display:block;font:600 2rem/1.1 var(--serif);color:#fff}
+.stats-row span{display:block;font-size:.8rem;color:#bfb3a3;margin-top:4px;line-height:1.35}
+@media (max-width:900px){.stats-row{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:600px){.stats-row{grid-template-columns:repeat(2,1fr)}}
+/* conference list */
+.c-intro{color:var(--muted);margin:6px 0 10px}
+.c-year{font-size:1.15rem;margin:26px 0 8px;display:flex;align-items:baseline;gap:10px}
+.c-year span{font:500 .8rem var(--sans);color:var(--muted);background:var(--band);border-radius:999px;padding:1px 9px}
+.confs{margin:0;padding-left:1.4em}
+.confs li{margin:0 0 10px;font-size:.95rem;line-height:1.55}
+.c-authors b{color:var(--ink)}
+.c-title{font-family:var(--serif);font-weight:600}
+.c-venue{color:var(--muted);font-style:italic}
+.tag{display:inline-block;font-size:.72rem;font-weight:600;padding:0 8px;border-radius:999px;background:var(--band);color:var(--accent-2);margin:2px 4px 0 0;font-style:normal}
+.tag.award{background:#f3dfb8;color:#7a4a12}
+.wptable{width:100%;border-collapse:collapse;font-size:.93rem;background:var(--paper);border:1px solid var(--line);margin-top:8px}
+.wptable th{text-align:left;padding:10px 12px;border-bottom:2px solid var(--ink);font-size:.82rem}
+.wptable td{padding:10px 12px;border-top:1px solid var(--line);vertical-align:top}
+.wptable td:first-child{width:62%}
+.wp-en{display:block;font-family:var(--serif);font-weight:600}
+.wp-zh{display:block;color:var(--muted);font-size:.86rem;margin-top:2px}
+@media (max-width:600px){.wptable th:nth-child(3),.wptable td:nth-child(3){display:none}.wptable td:first-child{width:auto}}
 
 /* code page v3 */
 .pkgindex{width:100%;border-collapse:collapse;margin:26px 0 10px;font-size:.95rem;background:var(--paper);border:1px solid var(--line)}
