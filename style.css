@@ -260,6 +260,13 @@ dl.cv{margin:0;display:grid;gap:18px}
 .wpdl dd{margin:0}
 .wp-zhl{display:block;color:var(--muted);font-size:.86rem;margin-top:2px}
 @media (max-width:600px){.wpdl{grid-template-columns:1fr;gap:2px}.wpdl dd{margin-bottom:8px}}
+.featured.nofig{grid-template-columns:1fr;max-width:900px}
+.urlist{padding-left:1.4em;margin:10px 0 0}
+.urlist li{margin:0 0 18px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.ur-en{font:600 1.02rem/1.45 var(--serif);margin:0}
+.ur-zh{color:#4b463f;margin:4px 0 8px;font-size:.95rem}
+.ur-meta{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.85rem;color:var(--muted);margin:0;align-items:center}
+.ur-meta .status{margin-left:0}
 
 /* code page v3 */
 .pkgindex{width:100%;border-collapse:collapse;margin:26px 0 10px;font-size:.95rem;background:var(--paper);border:1px solid var(--line)}
