@@ -250,6 +250,15 @@ dl.cv{margin:0;display:grid;gap:18px}
  nav a{padding:6px 8px;font-size:.88rem}}
 .page-hero h1 span{display:inline-block}
 .teachfig{max-width:380px}
+.wpd summary{cursor:pointer;list-style:none}
+.wpd summary::-webkit-details-marker{display:none}
+.wpd summary .wp-en::after{content:" ＋";color:var(--accent);font-weight:400}
+.wpd[open] summary .wp-en::after{content:" －"}
+.wpdl{margin:10px 0 0;display:grid;grid-template-columns:150px 1fr;gap:6px 14px;font-size:.9rem}
+.wpdl dt{font-weight:600;color:var(--accent-2)}
+.wpdl dd{margin:0}
+.wp-zhs{font-size:.86rem;color:var(--muted);margin:8px 0 0}
+@media (max-width:600px){.wpdl{grid-template-columns:1fr}.wpdl dd{margin-bottom:6px}}
 
 /* code page v3 */
 .pkgindex{width:100%;border-collapse:collapse;margin:26px 0 10px;font-size:.95rem;background:var(--paper);border:1px solid var(--line)}
