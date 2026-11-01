@@ -358,6 +358,8 @@ dl.cv{margin:0;display:grid;gap:18px}
 @media (max-width:640px){.urlist li{grid-template-columns:96px 1fr;gap:12px}.wptable td.wp-th,.wptable th:first-child{display:none}}
 
 /* 移地研究頁 */
+.places4{grid-template-columns:repeat(4,1fr)}a.place{display:block;color:inherit;text-decoration:none}a.place img{transition:transform .4s}a.place:hover img{transform:scale(1.04)}.place figcaption span{display:block;margin-top:6px;font-size:.82rem;color:#d8cfc2}
+@media (max-width:900px){.places4{grid-template-columns:1fr 1fr}}@media (max-width:600px){.places4{grid-template-columns:1fr}}
 .cv-note{color:var(--muted);font-size:.88rem;font-style:italic}
 .visits .vnav{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 26px}
 .visits .vnav a{border:1px solid var(--line);border-radius:999px;padding:5px 14px;font-size:.88rem;background:var(--paper)}
