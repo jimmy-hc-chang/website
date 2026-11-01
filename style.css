@@ -352,7 +352,7 @@ dl.cv{margin:0;display:grid;gap:18px}
 .fg-th .edge{stroke:#a59f95;stroke-width:1.1} .fg-th .node{fill:#4f6b79} .fg-th .node-r{fill:var(--accent)}
 .fg-th .line{fill:none;stroke:#6b8796;stroke-width:1.4} .fg-th .line-r{fill:none;stroke:var(--accent);stroke-width:1.6}
 .fg-th .land{fill:#efeae1} .fg-th .bub{fill:var(--accent);fill-opacity:.55}
-.fg-th .shape{fill:#fff;stroke:#2b2925;stroke-width:1.1} .fg-th .dash{stroke-dasharray:3 2}
+.fg-th .helix-3{fill:none;stroke:#2b2925} .fg-th .rung{stroke:#cfc8bc;stroke-width:1} .fg-th .shape{fill:#fff;stroke:#2b2925;stroke-width:1.1} .fg-th .dash{stroke-dasharray:3 2}
 .urlist li{display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:start}
 .wptable td.wp-th{width:104px;padding-right:0}.wptable td.wp-th .fg-th{width:96px}
 @media (max-width:640px){.urlist li{grid-template-columns:96px 1fr;gap:12px}.wptable td.wp-th,.wptable th:first-child{display:none}}
